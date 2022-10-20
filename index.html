@@ -42,43 +42,43 @@
         </div>
     </section>
 
-    <nav id="nav" class="nav navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand" href="#home">
-            Alyssa Cape
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <img class="nav__menu" src="./images/icon-menu.svg" alt="">
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#skills">
-                        Skills
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#projects">
-                        Projects
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+    <nav id="nav" class="nav sticky-top">
+        <div class="navbar navbar-expand-lg w-100 mx-auto">
+            <a class="navbar-brand" href="#home">Alyssa Cape</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img class="nav__menu" src="./images/icon-menu.svg" alt="">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
             
@@ -87,23 +87,20 @@
             <div class="row no-gutters">
                 <div class="col-12 col-lg-6 offset-lg-3">
                     <h2 class="s-heading">About</h2>
-                    <p class="s-heading-info">change me later</p>
-
                 </div>
                 <div class="about__description col-12 col-lg-6 order-2 order-lg-1">
-                    <p class="about__work">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos dolorum consequuntur ad sunt, maxime nam autem obcaecati similique nulla rerum necessitatibus harum illum ullam, iusto ex modi eius blanditiis?</p>
-                    <p class="about__education">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos dolorum consequuntur ad sunt, maxime nam autem obcaecati similique nulla rerum necessitatibus harum illum ullam, iusto ex modi eius blanditiis?</p>
-                    <p class="about__personal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos dolorum consequuntur ad sunt, maxime nam autem obcaecati similique nulla rerum necessitatibus harum illum ullam, iusto ex modi eius blanditiis?</p>
-
+                    <p class="about__intro s-paragraph">I&apos;m a mother of two who seeks opportunities to be a full-time software developer in the eCommerce industry. I&apos;m a results driven individual seeking to use my knowledge in HTML, CSS, Javascript, and related libraries/frameworks (such as React.js, and Bootstrap). I also have a background in sales where I was able to demonstrate my communication, and presentation skills in order to persuade people to avail products or services related to new and emerging technologies.</p>
                 </div>
 
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="" alt="">
-
+                <div class="about__picture col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="about__image-container d-flex justify-content-around justify-content-lg-start">
+                        <img class="about__image" src="https://place-puppy.com/300x300" alt="Alyssa">
+                        <img class="about__floating-image about__floating-image--left" src="https://place-puppy.com/300x300" alt="Alyssa">
+                        <img class="about__floating-image about__floating-image--right" src="https://place-puppy.com/300x300" alt="Alyssa">
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
     
     <section id="skills" class="skills">
@@ -135,22 +132,22 @@
 
     <section id="projects" class="projects">
         <div class="container-fluid projects__container">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-12 col-lg-6 offset-lg-3">
                     <h2 class="s-heading">Projects</h2>
                     <p class="s-heading-info">Here are some stuff I've created during my schools days in Centro Escolar University-Makati as well as some projects I did before and during my training in Zuitt's Coding Bootcamp</p>
                 </div>
                 
-                <div class="col-md-12">
-                    <div id="projects-carousel" class="carousel slide projects__carousel" data-ride="carousel" align="center">
+                <div class="col-12">
+                    <div id="projects-carousel" class="carousel slide projects__carousel" data-interval="false" data-ride="carousel" align="center">
                         <div class="carousel-inner">
                             <div class="carousel-item position-relative active">
                                 <div class="projects__image-container">
                                     <img class="projects__image" src="./images/project-bacolod.jpeg" alt="Bacolod">
                                 </div>
                                 <a href="https://alyssacape.github.io/scrimba-homepage/" target="__blank" class="projects__link s-button s-button--primary">
-                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="link">
-                                    <p class="projects__link-text">Bacolod Project (WIP)</p>
+                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="Bacolod">
+                                    <p class="projects__link-text">Bacolod Site (WIP)</p>
                                 </a>
                             </div>
                             <div class="carousel-item position-relative">
@@ -158,8 +155,8 @@
                                     <img class="projects__image" src="./images/project-birthday-gift.jpeg" alt="Birthday Gift">
                                 </div>
                                 <a href="https://alyssacape.github.io/scrimba-birthday-gift/" target="__blank" class="projects__link s-button s-button--primary">
-                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="link">
-                                    <p class="projects__link-text">Birthday Gift</p>
+                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="Birthday Gift">
+                                    <p class="projects__link-text">Birthday Gift Site</p>
                                 </a>
                             </div>
                             <div class="carousel-item position-relative">
@@ -167,8 +164,8 @@
                                     <img class="projects__image" src="./images/project-business-card.png" alt="Business Card">
                                 </div>
                                 <a href="https://alyssacape.github.io/scrimba-business-card/" target="__blank" class="projects__link s-button s-button--primary">
-                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="link">
-                                    <p class="projects__link-text">Business Card</p>
+                                    <img class="projects__link-icon" src="./images/icon-link.svg" alt="Business Card">
+                                    <p class="projects__link-text">Business Card Site</p>
                                 </a>
                             </div>
 
@@ -212,6 +209,62 @@
                         <a class="carousel-control-next" href="#projects-carousel" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+
+                        <ol class="carousel-indicators">
+                            <li class="active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#projects-carousel">
+                                    <img src="./images/project-bacolod.jpeg" class="img-fluid">
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#projects-carousel">
+                                    <img src="./images/project-birthday-gift.jpeg" class="img-fluid">
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#projects-carousel">
+                                    <img src="./images/project-business-card.png"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="3" data-target="#projects-carousel">
+                                    <img src="./images/project-protein-1.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="4" data-target="#projects-carousel">
+                                    <img src="./images/project-protein-2.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="5" data-target="#projects-carousel">
+                                    <img src="./images/project-prenatal-care-1.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="6" data-target="#projects-carousel">
+                                    <img src="./images/project-prenatal-care-2.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="7" data-target="#projects-carousel">
+                                    <img src="./images/project-kumain-ng-wasto-1.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="carousel-selector-2" data-slide-to="8" data-target="#projects-carousel">
+                                    <img src="./images/project-kumain-ng-wasto-2.jpg"  class="img-fluid">
+                                </a>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>

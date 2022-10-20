@@ -21,8 +21,8 @@
 
 @media only screen and (min-width: 768px) {
     .skills__container::before {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 6rem;
+        height: 6rem;
         left: 10%;
         transform: rotateZ(-60deg);
     }
@@ -80,8 +80,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     margin-bottom: 5rem;
 }
 
@@ -91,14 +91,14 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
-    width: calc(50% - 1rem);
-    flex-basis: calc(50% - 1rem);
+    width: calc(33% - 1rem);
+    flex-basis: calc(33% - 1rem);
 }
 
 @media only screen and (min-width: 768px) {
     .skills__items {
-        margin-left: -1.5rem;
-        margin-right: -1.5rem;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
         margin-bottom: 3rem;
     }
 
