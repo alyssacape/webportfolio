@@ -1,0 +1,198 @@
+/* ------------ */
+/* -- SHARED -- */
+/* ------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --breakpoint-xs: 0px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --background-primary: #FF10F0;
+    --background-secondary: #FFD700;
+    --background-dark: #151515;
+    --background-light: #FFFFFF;
+    --background-transparent: transparent;
+
+    --text-primary: #FF10F0;
+    --text-secondary: #FFD700;
+    --text-dark: #151515;
+    --text-light: #FFFFFF;
+    --text-transparent: transparent;
+
+    --border-primary: #FF10F0;
+    --border-secondary: #FFD700;
+    --border-dark: #151515;
+    --border-light: #FFFFFF;
+    --border-lighter: rgb(255 255 255 / 0.5);
+    --border-transparent: transparent;
+
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+[class^="container-"] {
+    max-width: 1600px;
+    padding: 0 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    [class^="container-"] {
+        padding: 0 2.5rem;
+    }
+}
+
+/* ------------------------ */
+/* -- SHARED: TYPOGRAPHY -- */
+/* ------------------------ */
+
+.s-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.s-heading-info {
+    font-size: 0.875rem;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.s-subheading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.s-legend {
+    font-size: 0.875rem;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.s-fine-print {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+
+/* ------------------- */
+/* -- SHARED: INPUT -- */
+/* ------------------- */
+
+.s-input {
+    padding: 0.875rem 1rem;
+}
+
+
+/* -------------------- */
+/* -- SHARED: BUTTON -- */
+/* -------------------- */
+
+.s-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .s-button-container {
+        max-width: 180px;
+    }
+}
+
+* + .s-button-container  {
+    margin-top: 1.5em;
+}
+
+.s-button-container > .s-button:nth-child(odd):not(:first-child) {
+    transform: rotateZ(1.5deg);
+}
+
+.s-button-container > .s-button:nth-child(even):not(:first-child) {
+    transform: rotateZ(-1.5deg);
+}
+
+.s-button {
+    font-size: 1rem;
+    display: inline-block;
+    background: var(--background-transparent);;
+	border: 0.125em solid var(--border-transparent);
+    border-radius: 0.25em;
+	padding: 0.5em 1.25em;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+    margin: 0.5em 0;
+    text-shadow: 
+        0 0 0.125em rgba(255 255 255 / 0.3),
+        0 0 0.5em currentColor;
+    box-shadow: 
+        inset 0 0 0.5em 0 currentColor,
+        0 0 0.75em 0 currentColor;
+    position: relative;
+    animation: all 500ms;
+}
+
+.s-button:hover,
+.s-button:active,
+.s-button:focus {
+    text-shadow: 
+        0 0 0.125em rgba(255 255 255 / 0.3),
+        0 0 0.25em currentColor;
+    box-shadow: 
+        inset 0 0 1em 0 currentColor,
+        0 0 0.75em 0 currentColor;
+}
+
+.s-button--primary,
+.s-button--primary:hover,
+.s-button--primary:active,
+.s-button--primary:focus {
+    background: var(--background-dark);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+}
+
+.s-button--secondary, 
+.s-button--secondary:hover, 
+.s-button--secondary:active, 
+.s-button--secondary:focus {
+    background: var(--background-dark);
+    color: var(--text-secondary);
+    border-color: var(--border-secondary);
+}
+
+.s-button--full {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .s-button--full-mobile {
+        width: 100%;
+    }
+}

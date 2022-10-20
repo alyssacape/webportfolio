@@ -1,0 +1,91 @@
+/* ---------- */
+/* -- HOME -- */
+/* ---------- */
+
+.home {
+    text-align: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes home-panning {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+.home__background {
+    position: relative;
+    animation: home-panning 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--background-primary),
+        var(--background-secondary),
+        var(--background-primary)
+    );
+    background-size: 200%;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home__background::before {
+    content: '';
+    position: absolute;
+    background: url("./../images/bg-honeycomb.svg") no-repeat center center;
+    background-color: rgb(0 0 0 / 0.6);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+}
+
+.home__container {
+    position: absolute;
+    width: 100%;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+}
+
+.home__heading {
+    color: var(--text-light);
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-shadow: 
+        0 0 0.25em rgba(0 0 0 / 1),
+        0 0 0.125em currentColor;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .home__heading {
+        font-size: 10vw;
+    }
+}
+
+.home__heading-emphasize {
+    display: inline-block;
+    position: relative;
+    color: var(--text-primary);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.home__heading-title {
+    position: absolute;
+    color: var(--text-light);
+    border-top: 1.5px solid var(--border-light);
+    font-size: 0.25em;
+    width: 100%;
+    right: 0;
+    bottom: -0.75em;
+    left: 0;
+    z-index: -1;
+}

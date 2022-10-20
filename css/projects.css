@@ -1,0 +1,121 @@
+/* -------------- */
+/* -- PROJECTS -- */
+/* -------------- */
+
+.projects .s-heading {
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.projects .s-heading-info {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .projects .s-heading {
+        text-align: center;
+        margin-top: 2.75rem;
+    }
+
+    .projects .s-heading-info {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.projects__carousel {
+    margin-bottom: 4rem;
+}
+
+.projects__image-container {
+    border: 2px solid var(--border-lighter);
+    max-height: 700px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects__image-container {
+        padding: 2rem;
+    }
+}
+
+.projects__image {
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects .carousel-item img {
+        width: 80%;
+    }
+}
+
+.projects__link {
+    position: absolute;
+    padding: 0.5rem 0.75rem;
+    bottom: 0.25rem;
+    right: 0.5rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects__link {
+        padding: 1rem 1.5rem;  
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.projects__link-icon {
+    display: inline;
+    margin: 0;
+    margin-right: 0.25rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects__link-icon {
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+}
+
+.projects__link-text {
+    display: inline;
+    margin: 0;
+}
+
+.projects .carousel-control-prev,
+.projects .carousel-control-next {
+    width: 15%;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects .carousel-control-prev,
+    .projects .carousel-control-next {
+        width: 5%;
+    }
+}
+
+.projects .carousel-control-prev-icon,
+.projects .carousel-control-next-icon {
+    background-color: var(--background-dark);
+    box-shadow: inset 0 0 0 2px currentColor;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .projects .carousel-control-prev-icon,
+    .projects .carousel-control-next-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}

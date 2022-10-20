@@ -1,0 +1,113 @@
+/* ------------ */
+/* -- SKILLS -- */
+/* ------------ */
+
+.skills__container {
+    position: relative;
+}
+
+.skills__container::before {
+    position: absolute;
+    content: '';
+    background-color: var(--background-transparent);
+    border: 0.75rem solid var(--border-secondary);
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -1.5rem;
+    left: 65%;
+    transform: rotateZ(60deg);
+    z-index: 999;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills__container::before {
+        width: 4.5rem;
+        height: 4.5rem;
+        left: 10%;
+        transform: rotateZ(-60deg);
+    }
+}
+
+.skills__container::after {
+    position: absolute;
+    content: '';
+    background-color: var(--background-dark);
+    box-shadow:
+        0 0 0 0.4rem var(--background-primary),
+        0 0 0 0.8rem var(--background-dark),
+        0 0 0 1.2rem var(--background-primary);
+    border-radius: 25%;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 0rem;
+    left: 25%;
+    transform: rotateZ(15deg);
+    z-index: 999;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills__container::after {
+        left: 80%;
+        bottom: -3rem;
+        transform: rotateZ(-15deg);
+    }
+}
+
+.skills .s-heading {
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.skills .s-heading-info {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills .s-heading {
+        text-align: center;
+        margin-top: 2.75rem;
+    }
+
+    .skills .s-heading-info {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.skills__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 5rem;
+}
+
+.skills__item {
+    padding: 0.25rem;
+    background: var(--background-light);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    width: calc(50% - 1rem);
+    flex-basis: calc(50% - 1rem);
+}
+
+@media only screen and (min-width: 768px) {
+    .skills__items {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .skills__item {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        margin-bottom: 1.5rem;
+        width: calc(16.66% - 1.5rem);
+        flex-basis: calc(16.66% - 1.5rem);
+    }
+}
+

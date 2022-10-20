@@ -1,0 +1,27 @@
+/* ------------ */
+/* -- FOOTER -- */
+/* ------------ */
+
+.footer {
+    border-top: 1px solid var(--border-lighter);
+    border-bottom: 0.5rem solid var(--border-primary);
+    padding: 1.5rem 0;
+}
+
+.footer__copyright,
+.footer__copy,
+.footer__project {
+    margin: 0;
+}
+
+.footer__copyright,
+.footer__copy {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__copyright,
+    .footer__copy {
+        margin-bottom: 0;
+    }
+}
