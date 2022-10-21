@@ -37,8 +37,8 @@
         0 0 0 1.0rem var(--background-dark),
         0 0 0 1.5rem var(--background-primary);
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     bottom: -3rem;
     left: 75%;
     z-index: 999;
@@ -46,8 +46,7 @@
 
 @media only screen and (min-width: 992px) {
     .contact__container::after {
-        left: 12.5%;
-        bottom: 9rem;
+        display: none;
     }
 }
 
@@ -176,4 +175,18 @@
 .contact .modal-footer {
     padding-top: 0;
     border: none;
+}
+
+.contact .mapouter{
+    text-align: right;
+    height: 98px;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+    
+.contact .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 98px;
+    width: 100%;
 }
